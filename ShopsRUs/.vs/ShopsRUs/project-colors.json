@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "071efb98-5e24-440e-9d15-81b06f80b479": {
+      "ProjectGuid": "071efb98-5e24-440e-9d15-81b06f80b479",
+      "DisplayName": "ShopsRUs",
+      "ColorIndex": 0
+    },
+    "69b87d01-5d1a-4fd3-a7fb-02b2cd923ef4": {
+      "ProjectGuid": "69b87d01-5d1a-4fd3-a7fb-02b2cd923ef4",
+      "DisplayName": "ShopsRUs.API.Tests",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
