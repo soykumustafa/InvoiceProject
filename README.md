@@ -1,6 +1,8 @@
 # InvoiceProject
 Shosps
 
+Proje ASP.Net Core Web API ile Oluşturulmuştur.Test projesi de xUnit Test ile oluşturulmuştur. 
+
 --> Controller
 *InvoiceController:Apinin çalışmasını kontrol eden controller bulunur.
 InvoiceController : "DataRepository" classımız ile data yüklenmesini
