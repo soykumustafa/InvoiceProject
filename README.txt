@@ -1,58 +1,58 @@
-
+Proje ASP.Net Core Web API ile OluÅŸturulmuÅŸtur.Test projesi de xUnit Test ile oluÅŸturulmuÅŸtur. 
 --> Controller
-*InvoiceController:Apinin çalışmasını kontrol eden controller bulunur.
-InvoiceController : "DataRepository" classımız ile data yüklenmesini
-sağlıyoruz.
-GetInvoiceID: fatura id si ile fatura bilgileri  "Price" class ımızda 
-kontrolleri yapılır ve indirim oranı belirlenir.
+*InvoiceController:Apinin Ã§alÄ±ÅŸmasÄ±nÄ± kontrol eden controller bulunur.
+InvoiceController : "DataRepository" classÄ±mÄ±z ile data yÃ¼klenmesini
+saÄŸlÄ±yoruz.
+GetInvoiceID: fatura id si ile fatura bilgileri  "Price" class Ä±mÄ±zda 
+kontrolleri yapÄ±lÄ±r ve indirim oranÄ± belirlenir.
 
 --> Bussines
-DataRepository:Data yüklenmesi yapılır
-Price: Fatura bilgisinden dönen fatura bilgisine göre yapılacak indirim şekli belirlenir.
-PriceAccountDetail: "price" class inda indirim türü belirlendikten sonra yapılacak indirim işlemleri bu
-class ımızda hesaplanır,dönen tutar indirim uygulanan fatura tutarıdır.
+DataRepository:Data yÃ¼klenmesi yapÄ±lÄ±r
+Price: Fatura bilgisinden dÃ¶nen fatura bilgisine gÃ¶re yapÄ±lacak indirim ÅŸekli belirlenir.
+PriceAccountDetail: "price" class inda indirim tÃ¼rÃ¼ belirlendikten sonra yapÄ±lacak indirim iÅŸlemleri bu
+class Ä±mÄ±zda hesaplanÄ±r,dÃ¶nen tutar indirim uygulanan fatura tutarÄ±dÄ±r.
 
 --> Models
-Affiliate: Mağazaya Bağlı kurumların bulunduğu modeldir.
-Customer:Mağaza Müşterilerinin bulunduğu modeldir.
-Employee:Mağaza Personel bilgilerinin bulunduğu modeldir.
-Invoice:Fatura Bilgilerinin bulunduğu modeldir
+Affiliate: MaÄŸazaya BaÄŸlÄ± kurumlarÄ±n bulunduÄŸu modeldir.
+Customer:MaÄŸaza MÃ¼ÅŸterilerinin bulunduÄŸu modeldir.
+Employee:MaÄŸaza Personel bilgilerinin bulunduÄŸu modeldir.
+Invoice:Fatura Bilgilerinin bulunduÄŸu modeldir
 
---> class Affiliate(Bağlı kurumlar)
-AffiliateId 	: Bağlı Kurum Id
-Name 		: Kurum Adı
-InsertDate 	: Kayıt tarihi
+--> class Affiliate(BaÄŸlÄ± kurumlar)
+AffiliateId 	: BaÄŸlÄ± Kurum Id
+Name 		: Kurum AdÄ±
+InsertDate 	: KayÄ±t tarihi
 IsActive 	:Aktif mi
 
---> class Customer (Müşleriler)
-CustomerId 	:Müşteri Id
-Name 		:Müşteri Adı
-Surname 	:Müşteri Soyadı
-InsertDate 	:Kayıt tarihi
+--> class Customer (MÃ¼ÅŸleriler)
+CustomerId 	:MÃ¼ÅŸteri Id
+Name 		:MÃ¼ÅŸteri AdÄ±
+Surname 	:MÃ¼ÅŸteri SoyadÄ±
+InsertDate 	:KayÄ±t tarihi
 IsActive 	:Aktif mi
 
 --> class Employee (Personeller)
 EmployeeId 	:Personel Id
-Name 		:Personel Adı
-Surname 	:Personel Soyadı
-InsertDate 	:Kayıt tarihi
+Name 		:Personel AdÄ±
+Surname 	:Personel SoyadÄ±
+InsertDate 	:KayÄ±t tarihi
 IsActive 	:Aktif mi
 
 --> class Invoice (Faturalar)
 InvoiceId : Fatura Id
 EmployeeId : Personel ID
-AffiliateId : Bağlı Kurum Id
-CustomerID : Müşteri ID
-ShopStatus : Satış Durumu
-price : Satış Tutarı
-InsertDate : Kayıt tarihi
+AffiliateId : BaÄŸlÄ± Kurum Id
+CustomerID : MÃ¼ÅŸteri ID
+ShopStatus : SatÄ±ÅŸ Durumu
+price : SatÄ±ÅŸ TutarÄ±
+InsertDate : KayÄ±t tarihi
 IsActive : Aktif mi
 
 --> ShopsRUs.API.Tests
 Test projesidir.xUnit test projemizde
-InvoiceTests class altında 
+InvoiceTests class altÄ±nda 
 EmployeeTest 	: Durum personel indirimi ise 
-AffiliateTest 	: Durum Bağlı kurum indirimi ise
-CustomerTest 	:Durum müşteri iki yıldan eski müşteri ise	
-FivePercentTest : Durum her 100 tl ye 5 tl indirim sağlanacak ise
-uygulanan indirimleri kapsamaktadır .
+AffiliateTest 	: Durum BaÄŸlÄ± kurum indirimi ise
+CustomerTest 	:Durum mÃ¼ÅŸteri iki yÄ±ldan eski mÃ¼ÅŸteri ise	
+FivePercentTest : Durum her 100 tl ye 5 tl indirim saÄŸlanacak ise
+uygulanan indirimleri kapsamaktadÄ±r .
